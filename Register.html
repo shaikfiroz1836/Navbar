@@ -41,7 +41,7 @@
             </li>
         </ul>
     </nav><br>
-    <form>
+    <form id="ToLoginForm">
         <div class="container">
             <div class="row">
                 
@@ -69,6 +69,17 @@
                 </div>
             </div>
         </div>
+        <script>
+            // JavaScript code to handle the login button click event
+            document.getElementById('ToLoginForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission behavior
+    
+                // You can perform any necessary login logic here
+    
+                // Redirect to the home page
+                window.location.href = './Login.html';
+            });
+        </script>
     </form>
 </body>
 </html>
