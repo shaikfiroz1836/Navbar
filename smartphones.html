@@ -71,7 +71,7 @@
                         <hr>
                         
                         <div>
-                            <img style="height: 200px; width: 300px;" src="./Samsung-Galaxy-S24-Ultra.png" alt="Samsung-Galaxy-S24-Ultra image">
+                            <img style="height: 200px; width: 300px;" src="./Samsung-Galaxy-S24-Ultra.png" alt="Samsung-Galaxy-S24-Ultra image" id="clickableImage">
                             <big style="color: red;">1,29,999/- Only</big> <br>
                             <p>
                                 SAMSUNG Galaxy S24 Ultra 5G (Titanium Gray, 1 TB)  (12 GB RAM)
@@ -237,5 +237,16 @@
             </div>
         </div>
     </div>
+
+    <script>
+        // Get a reference to the image element
+        const image = document.getElementById('clickableImage');
+    
+        // Add a click event listener to the image
+        image.addEventListener('click', function() {
+          // Change the window location to the desired page
+          window.location.href = './samsung.html';
+        });
+      </script>
 </body>
 </html>
