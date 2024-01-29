@@ -12,21 +12,23 @@
             background-repeat: no-repeat;
             height: 100vh; /* Set the background image to cover the entire viewport height */
         }
+        .transparent-card {
+            background-color: rgba(255, 255, 255, 0.1); /* Adjust the last value (0.8) for transparency */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body class="image">
     <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
         <a href="#" class="navbar-brand">Electronics</a>
-        
     </nav><br>
-
 
     <form>
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="card">
-                        
+                    <div class="card transparent-card">
                         <div class="card-body">
                             <div class="card-header bg-primary">Register Form</div>
                             <div class="form-row">
@@ -62,7 +64,6 @@
                                     <option>Rajasthan</option>
                                     <option>Chennai</option>
                                     <option>Kerala</option>
-        
                                   </select>
                                 </div>
                                 <div class="form-group col-md-2">
@@ -80,12 +81,10 @@
                               </div>
                               <button type="submit" class="btn btn-success" onclick="window.location.href='./index.html'">Register</button>
                         </div>
-                        </div>
                     </div>
+                </div>
             </div>
         </div>
     </form>
-    
-
 </body>
 </html>

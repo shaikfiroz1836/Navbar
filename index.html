@@ -12,17 +12,22 @@
             background-repeat: no-repeat;
             height: 100vh; /* Set the background image to cover the entire viewport height */
         }
+
+        .transparent-card {
+            background-color: rgba(255, 255, 255, 0.1); /* Adjust the last value (0.8) for transparency */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body class="image">
     <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
         <a href="#" class="navbar-brand">Electronics</a>
-        
     </nav><br>
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="card">
+                <div class="card transparent-card">
                     <div class="card-body">
                         <h5 class="card-header bg-primary">Login</h5>
                         <div class="card-body">
@@ -38,7 +43,6 @@
                                 <input type="submit" value="Login" class="btn btn-success" id="loginBtn">                              
                                 <input type="button" value="Sign Up" class="btn btn-success" onclick="window.location.href='./Register.html'">
                             </form>
-                            
                         </div>
                     </div>
                 </div>
