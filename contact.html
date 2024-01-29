@@ -7,10 +7,16 @@
     <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.css">
     <style>
         .image {
-            background-image: url("Electronics_image.png"); /* Adjust the path to your image file */
+            background-image: url("Electronics2.png"); /* Adjust the path to your image file */
             background-size: cover;
             background-repeat: no-repeat;
             height: 100vh; /* Set the background image to cover the entire viewport height */
+        }
+
+        .transparent-card {
+            background-color: rgba(255, 255, 255, 0.1); /* Adjust the last value (0.8) for transparency */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -18,7 +24,6 @@
     <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
         <a href="#" class="navbar-brand">Electronics</a>
         <ul class="navbar-nav ml-auto">
-            
             <li class="nav-item">
                 <a class="navbar-brand" href="./smartphones.html">smartphones</a>
             </li>
@@ -49,7 +54,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="card">
+                    <div class="card transparent-card">
                         <div class="card-body">
                             <h4 class="card-header bg-primary">Contact Page</h4>
                             <div class="card-body form-group">
@@ -68,7 +73,6 @@
                 </div>
             </div>
         </div>
-        
     </form>
 </body>
 </html>
