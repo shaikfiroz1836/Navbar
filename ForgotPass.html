@@ -29,7 +29,7 @@
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="card transparent-card">
                     <div class="card-body">
-                        <h5 class="card-header">Login</h5>
+                        <h5 class="card-header">Forgot Your Password?</h5>
                         <div class="card-body">
                             <form id="loginForm">
                                 <div class="form-group">
@@ -37,12 +37,15 @@
                                     <input type="text" class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label>Password:</label>
+                                    <label>Old Password:</label>
                                     <input type="password" class="form-control">
-                                </div>                                
-                                <input type="submit" value="Login" class="btn btn-success" id="loginBtn">                              
-                                <input type="button" value="Sign Up" class="btn btn-success" onclick="window.location.href='./Register.html'"> <br>
-                                <a class="nav-link" onclick="window.location.href='./ForgotPass.html'">Forgot Password?</a>
+                                </div>    
+                                <div class="form-group">
+                                    <label>New Password:</label>
+                                    <input type="password" class="form-control">
+                                </div>                               
+                                <input type="submit" value="Submit" class="btn btn-success" id="ForgotForm">                              
+                                
                             </form>
                         </div>
                     </div>
@@ -54,13 +57,13 @@
     <!-- Include your JavaScript at the end of the body or use defer/async attributes -->
     <script>
         // JavaScript code to handle the login button click event
-        document.getElementById('loginForm').addEventListener('submit', function(event) {
+        document.getElementById('ForgotForm').addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent the default form submission behavior
 
             // You can perform any necessary login logic here
 
             // Redirect to the home page
-            window.location.href = './home.html';
+            window.location.href = './index.html';
         });
     </script>
 </body>
