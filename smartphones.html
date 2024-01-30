@@ -44,7 +44,7 @@
                     <div class="card-body">
                         <h4 class="card-header bg-info">Buy the best Smartphones around you</h4>
                         <div>
-                            <img style="height: 200px; width: 300px;" src="./Iphone15promax.png" alt="Iphone15promax image" onclick="window.location.href='./iphones.html'">
+                            <img style="height: 200px; width: 300px;" src="./Iphone15promax.png" alt="Iphone15promax image" id="IpImage">
                             <big style="color: red;">1,39,999/- Only</big> <br>
                             <p>
                                 Apple iPhone 15 Pro Max (Natural Titanium, 256 GB)
@@ -125,7 +125,7 @@
                         <hr>
 
                         <div>
-                            <img style="height: 200px; width: 300px;" src="./Iphone15promax.png" alt="Iphone15promax image">
+                            <img style="height: 200px; width: 300px;" src="./Iphone15promax.png" alt="Iphone15promax image" id="IpImage">>
                             <big style="color: red;">1,39,999/- Only</big> <br>
                             <p>
                                 Apple iPhone 15 Pro Max (Natural Titanium, 256 GB)
@@ -206,7 +206,7 @@
                         <hr>
 
                         <div>
-                            <img style="height: 200px; width: 300px;" src="./Iphone15promax.png" alt="Iphone15promax image">
+                            <img style="height: 200px; width: 300px;" src="./Iphone15promax.png" alt="Iphone15promax image" id="IpImage">>
                             <big style="color: red;">1,39,999/- Only</big> <br>
                             <p>
                                 Apple iPhone 15 Pro Max (Natural Titanium, 256 GB)
@@ -246,6 +246,14 @@
         image.addEventListener('click', function() {
           // Change the window location to the desired page
           window.location.href = './samsung.html';
+        });
+
+        const Iphone = document.getElementById('IpImage');
+    
+        // Add a click event listener to the image
+        Iphone.addEventListener('click', function() {
+          // Change the window location to the desired page
+          window.location.href = './iphones.html';
         });
       </script>
 </body>
